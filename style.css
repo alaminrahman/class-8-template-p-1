@@ -14,6 +14,8 @@
     --color-black: #000;
     --color-violate: #35046B;
     --color-purple: #F16BFF;
+    --color-purple-dark: #7E09FF;
+    --color-gray: rgb(148, 147, 147);
 }
 
 :root {
@@ -23,13 +25,17 @@
 /* End Global CSS */
 
 .container {
-    width: 960px;
+    width: 1200px;
     margin: auto;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", serif;
     background: var(--color-secondary);
+}
+
+.section {
+    padding: 80px 0;
 }
 
 /* Header */
@@ -140,3 +146,211 @@ header .actions a{
 }
 
 /* End Hero */
+
+/* Services CSS */
+.services-wrapper .service-header {
+    color: var(--color-white);
+    text-align: center;
+}
+.services-wrapper .service-header h2 {
+    margin: 20px 0;
+}
+
+.services {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.services .service-item {
+    width: 33%;
+    box-shadow: 0px 0px 28px 0px var(--color-purple-dark) inset;
+    padding: 48px 20px;
+    color: var(--color-white);
+    border-radius: 15px;
+}
+
+.services .service-item p {
+    color: var(--color-gray);
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.services .service-item .content {
+    margin-top: 20px;
+}
+
+.services .service-item .action {
+    margin: 25px 0;
+}
+
+.services .service-item a {
+    border: 1px solid var(--color-white);
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: var(--color-white);
+    text-decoration: none;
+
+}
+
+.services .service-item a img {
+    padding-top: 5px;
+}
+/* End Services */
+
+.why-choose-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.why-choose-wrapper .content {
+    color: var(--color-white);
+    flex-basis: 50%;
+    background: rgba(185, 55, 55, 0.107);
+    padding: 2rem;
+}
+.why-choose-wrapper .content h2{
+    color: var(--color-white);
+    font-size: 32px;
+}
+
+.why-choose-wrapper .content p{
+    color: var(--color-gray);
+    margin: 2rem 0;
+}
+
+.why-choose-wrapper .content ul li{
+    color: var(--color-gray);
+    list-style: none;
+}
+
+.why-choose-wrapper .content .action {
+    margin: 2rem 0;
+}
+
+.why-choose-wrapper .content .action a {
+    color: var(--color-white);
+    text-decoration: none;
+
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: var(--color-gradient);
+}
+
+.why-choose-wrapper .image {
+    flex-basis: 50%;
+    background: rgba(185, 55, 55, 0.107);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+/* End why choose */
+
+/* Pricing */
+.pricing-area-header {
+    text-align: center;
+}
+
+.pricing-area-header h1{
+    color: var(--color-white);
+    font-size: 48px;
+}
+
+.pricing-area-header p{
+    color: var(--color-gray);
+    font-size: 20px;
+}
+
+.pricing-items {
+    padding: 50px 0;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+.pricing-items .item {
+    width: 33%;
+    background: #1b1b1c;
+    padding: 24px;
+    border-radius: 18px;
+}
+.pricing-items .item .price-header {
+    background: var(--color-primary);
+    border-radius: 18px;
+    padding: 16px;
+    text-align: center;
+}
+
+.price-header h2 {
+    font-size: 24px;
+    color: var(--color-gray);
+    margin-bottom: 20px;
+}
+
+.price-header h1 {
+    font-size: 48px;
+    color: var(--color-white);
+}
+
+.premium-price {
+    background: -webkit-linear-gradient(#7E09FF, #F16BFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.price-header .period {
+    font-size: 16px;
+    color: var(--color-gray);
+    margin-bottom: 20px;
+}
+
+.price-header .brief {
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+.price-header .actions {
+    margin: 20px 0;
+}
+
+.price-header .actions a {
+    border-width: 2px;
+    border-style: solid;
+    border-image: var(--color-gradient);
+    border-image-slice: 1;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px 14px;
+    display: block;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.premium-btn{
+    background: var(--color-gradient);
+    border: none;
+    border-radius: 8px;
+}
+.price-content {
+    margin: 30px 0;
+}
+.price-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--color-white);
+}
+
+.price-content ul li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+/* End Pricing */
